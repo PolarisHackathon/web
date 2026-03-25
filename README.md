@@ -48,7 +48,18 @@ pnpm build
 
 ```
 web/
-└── README.md
+├── public/          # 静态资源（不经过构建处理）
+├── src/
+│   ├── assets/      # 图片、字体等资源文件
+│   ├── components/  # 公共组件
+│   ├── views/       # 页面级组件
+│   ├── router/      # Vue Router 路由配置
+│   ├── stores/      # Pinia 状态管理
+│   ├── App.vue      # 根组件
+│   └── main.ts      # 应用入口
+├── index.html
+├── vite.config.ts   # Vite 配置
+└── tsconfig.json    # TypeScript 配置
 ```
 
 ## 参考链接
